@@ -1,14 +1,17 @@
 def convert(number):
+    r = ""
+
     if number % 3 == 0:
-        print("Pling")
+        r += "Pling"
     if number % 5 == 0:
-        print("Plang")
+        r += "Plang"
     if number % 7 == 0:
-        print("Plong")
+        r += "Plong"
     else:
-        print(number)
+        r = number
 
+    print (r)
 
-convert(2)
+convert(105)
     
 
