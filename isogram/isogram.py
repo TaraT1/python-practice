@@ -1,13 +1,18 @@
 def is_isogram(str):
-    #Uses list method count; returns count of how many times obj occurs in list
-    #ToDo: Add ignore multiple - and space
-    word = input("Enter a word \n")
-    realWord = list(word)
-    for char in realWord : #convert  to list 
-        #counts = realWord.count(char)
-        if  realWord.count(char) > 1:
-            print(word +" != isogram") #responds to each letter, prints #chars
-        else:
-            print(word +" = isogram")
+    
+    #User inputs word. Function lower cases input 
+    #and determines if word is isogram.
+    str = input("Enter a word \n")
+    str = str.lower()
+    for char in str: 
+        #iterates over each character for repetition; 
+        #if more than 1, not isogram
+        if  str.count(char) > 1: 
+            print(str +" != isogram")
+            return False #return prevents multiple instances from printing
+        else: 
+            print(str +" = isogram")         
+            return True #return prevents multiple instances from printing
+    
 
 is_isogram(str)
