@@ -1,0 +1,25 @@
+def convert(number = 251):
+    factor = {3:"Pling", 5:"Plang", 7:"Plong"}
+    lett = []
+    for k, v in factor.items():
+        if number % k is 0:
+            lett.append(v)
+    return str(number) if not lett else "".join(lett)
+
+
+    def convert(number):
+	r = ""
+
+	if number % 3 == 0:
+		r = r + "Pling"
+	
+	if number % 5 == 0:
+		r = r + "Plang"
+	
+	if number % 7 == 0:
+		r = r + "Plong"
+	
+	if r == "":
+		r = str(number)
+
+	return(r)

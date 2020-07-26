@@ -1,0 +1,9 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "*test*.py"
+    ],
+    "python.pythonPath": "C:\\Users\\tarat\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"
+}
